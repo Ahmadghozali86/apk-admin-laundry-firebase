@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pembayaran1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/warna_utama"
+            android:padding="10dp"
+            android:id="@+id/main_toolbar">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CleanTrack Manajer"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/warna_utama"
+            android:textStyle="bold"
+            android:text="CUCI BASAH"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/basah"
+
+            />
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Nama Pelanggan"
+                android:textSize="15dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/namaPelanggan"
+                    android:textColor="@color/warna_utama"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/warna_utama"
+                    android:hint="Nama Pelanggan"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Nama Admin"
+                android:textSize="15dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/namaAdmin"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Berat Pakaian"
+                android:textSize="15dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginEnd="5dp"
+                android:layout_width="80dp"
+                android:layout_height="50dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/beratPakaian"
+                    android:textColor="@color/warna_utama"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/warna_utama"
+                    android:hint="Berat"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=".Kg"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Biaya Cuci Basah"
+                android:textSize="15dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. "
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="150dp"
+                app:boxStrokeColor="@color/warna_utama"
+                android:layout_height="50dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/hargaBasah"
+                    android:textColor="@color/warna_utama"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/warna_utama"
+                    android:hint=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <Button
+                android:id="@+id/hitungBiayaBasah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Hitung Biaya Cuci Basah"
+                android:backgroundTint="@color/warna_utama"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+
+            android:background="@color/warna_utama">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Saldo Pembelian"
+                android:textSize="15dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. "
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="150dp"
+                app:boxStrokeColor="@color/warna_utama"
+                android:layout_height="50dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/saloPembelian"
+                    android:textColor="@color/warna_utama"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/warna_utama"
+                    android:hint=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Saldo Kembalian"
+                android:textSize="15dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. "
+                android:textSize="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/warna_utama"
+                android:textStyle="bold"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="150dp"
+                app:boxStrokeColor="@color/warna_utama"
+                android:layout_height="50dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:id="@+id/saloPengembalian"
+                    android:textColor="@color/warna_utama"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/warna_utama"
+                    android:hint=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <Button
+                android:id="@+id/hitungPengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Hitung Saldo Pengembalian"
+                android:backgroundTint="@color/warna_utama"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+
+            android:background="@color/warna_utama">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <Button
+                android:id="@+id/kirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Kirim Data Pesanan"
+                android:backgroundTint="@color/warna_utama"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Clear"
+                android:backgroundTint="@color/warna_utama"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

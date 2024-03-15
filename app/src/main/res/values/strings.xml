@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CleanTrack Manajer</string>
+
+    <string-array name="nama_admin">
+        <item>Cahya</item>
+        <item>Roy</item>
+        <item>Ghozy</item>
+    </string-array>
+</resources>
